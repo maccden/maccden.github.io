@@ -44,7 +44,6 @@ nav a {
     text-decoration: none;
     color: white;
     font-family: "Montserrat", sans-serif;
-    font-size: 15px;
     font-weight: 300px;
 }
 
@@ -190,14 +189,13 @@ nav ul {
 }
 
 .sidebar-right {
-height: 1800px;
-width: 280px;
-float: right;
-position: relative;
-top: 60px;
-right: 50px;
+    height: 1800px;
+    width: 340px;
+    float: right;
+    position: relative;
+    top: 60px;
+    right: 40px;
 }
-
 
 .videos {
     position: relative;
@@ -211,11 +209,11 @@ right: 50px;
 }
 
 .picks {
-    top: 80px;
+    top: 100px;
     position: sticky;
-    -webkit-position:sticky;
+    -webkit-position: sticky;
     height: 300px;
-    font-size: 16px;
+    font-size: 14px;
     justify-content: center;
 }
 
