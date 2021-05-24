@@ -183,9 +183,8 @@ nav ul {
 .banner {
     height: 350px;
     background: url("../img/banner.png") no-repeat;
-    background-attachment: fixed;
     background-size: cover;
-    background-size: 100% 45%;
+    background-position:center;
 }
 
 .sidebar-right {
