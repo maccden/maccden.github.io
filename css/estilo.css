@@ -1,0 +1,398 @@
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #131313;
+}
+
+.article p {
+    font-size: 20px;
+}
+
+.article span {
+    padding: 0 14px;
+    padding-top: 11px;
+    padding-bottom: 4px;
+    text-transform: uppercase;
+    background: red;
+    text-shadow: 2px 2px 2px #000;
+    text-shadow: 1px, 1px, 1px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+
+.article h2 {
+    border-bottom: 1px solid #ececec;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(236, 236, 236);
+}
+
+footer a {
+    text-decoration: none;
+    color: #c22e2e;
+}
+
+footer a:hover {
+    opacity: .5;
+    transition: 0.3s;
+}
+
+nav a {
+    display: block;
+    transition: 0.4s;
+    text-decoration: none;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 300px;
+}
+
+.main {
+    margin: 20px 50px;
+}
+
+.wrapper .article {
+    width: 70%;
+    margin: 30px 10px;
+    padding: 20px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+.article article {
+    font-size: 10px;
+}
+
+.footerbanner {
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    background-image: url("../img/footerbanner.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.footerbanner p a {
+    transition: 0.3s;
+    text-decoration: none;
+    color: #c22e2e;
+}
+
+.footerbanner p a:hover {
+    transition: 0.3s;
+    color: white;
+}
+
+.footerbanner p {
+    position: relative;
+    top: 180px;
+    margin: 1px 230px 10px 230px;
+    text-decoration: none;
+    color: #666;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+}
+
+footer p {
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: rgba(203, 203, 203, .5);
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+}
+
+.nav {
+    margin-top: 0;
+    margin-bottom: 0;
+    transition: all ease .5s;
+}
+
+.menu-fixed {
+    position: fixed;
+    z-index: 100000;
+    top: 0;
+    width: 100%;
+    transition: 0.2s;
+    background: red;
+    font-family: "Roboto", sans-serif;
+}
+
+.menu {
+    position: relative;
+    z-index: 100000;
+    top: 0;
+    width: 100%;
+    transition: 0.2s;
+    background: red;
+    font-family: "Roboto", sans-serif;
+}
+
+li a {
+    padding: 14px 16px;
+    text-shadow: 2px 2px 2px #000;
+}
+
+nav li a:hover {
+    color: red;
+    background: black;
+}
+
+.nav>li {
+    float: left;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul {
+    overflow: hidden;
+}
+
+.nav li ul {
+    position: absolute;
+    display: none;
+    min-width: 140px;
+    color: white;
+    background: black;
+}
+
+.nav li:hover>ul {
+    display: block;
+}
+
+.nav>li:hover {
+    color: red;
+    background-color: black;
+}
+
+.nav>li:hover a {
+    color: red;
+    background: black;
+}
+
+.nav li:hover ul a {
+    color: white;
+}
+
+.nav li:hover ul li a:hover {
+    color: red;
+}
+
+.banner {
+    height: 350px;
+    background: url("../img/banner.png") no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-size: 100% 45%;
+}
+
+.sidebar-right {
+height: 1860px;
+width: 280px;
+float: right;
+position: relative;
+top: 60px;
+right: 50px;
+}
+
+
+.videos {
+    position: relative;
+    left: 100px;
+    width: 540px;
+    margin: 20px 50px;
+    color: rgba(105, 105, 105, .7);
+    font-family: "Montserrat";
+    font-size: 15px;
+    decoration: none;
+}
+
+.picks {
+    top: 100px;
+    position: sticky;
+    -webkit-position:sticky;
+    height: 300px;
+    font-size: 16px;
+    justify-content: center;
+}
+
+.picks span {
+    position: relative;
+    bottom: 7px;
+    padding: 11px;
+    text-transform: uppercase;
+    color: black;
+    background: red;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+.picks h3 {
+    border-bottom: 1px solid #ececec;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(236, 236, 236);
+}
+
+.picks a {
+    display: block;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    transition: 0.3s;
+    text-decoration: none;
+    color: white;
+    border-bottom: solid 1px #ececec;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(236, 236, 236, .1);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+.picks a:hover {
+    color: red;
+}
+
+.topbarsocials {
+    position: relative;
+    top: 40px;
+    display: inline-block;
+    float: left;
+    width: 100%;
+    height: 1px;
+    margin: -36px 1px 1px -10px;
+    text-align: right;
+    text-decoration: none;
+}
+
+.topbarsocials .fa {
+    margin-left: -20px;
+    background: none;
+}
+
+.topbarsocials .fa:hover {
+    opacity: .5;
+}
+
+.topbar ul li {
+    display: inline-block;
+    float: left;
+    margin-top: -7px;
+    margin-bottom: 10px;
+    margin-left: 32px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+}
+
+.footersocials {
+    position: relative;
+    top: 210px;
+}
+
+.fa {
+    display: inline-block;
+    width: 30px;
+    padding: 10px;
+    transition: 0.2s;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.footersocials>.fa {
+    margin-right: 0;
+}
+
+.footersocials .fa:hover {
+    position: relative;
+    -webkit-transform: scale(1.8);
+    color: rgba(255, 0, 0, .7);
+}
+
+.fa-facebook {
+    color: white;
+}
+
+.fa-twitter {
+    color: white;
+}
+
+.fa-youtube {
+    color: white;
+}
+
+.fa-steam {
+    color: white;
+}
+
+.fa-twitch {
+    color: white;
+}
+
+form.buscar input[type=text] {
+    transition: 0.3s;
+    padding: 14px 14px 15px;
+    font-size: 15px;
+    border: 1px black;
+    float: right;
+    background: #c22e2e;
+    width: auto;
+}
+
+form.buscar button {
+    border: 1px solid black;
+    float: right;
+    padding: 5px 14px;
+    margin-right: 0px;
+    background: black;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form.buscar button:hover {
+    opacity: .7;
+    transition: 0.3s;
+}
+
+form.buscar::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.picks .steamdoom {
+    background: url(../img/doom.png) no-repeat;
+    background-size: cover;
+}
+
+.picks .rapha {
+    background: url(../img/rapha.png) no-repeat;
+    background-size: cover;
+}
+
+.picks .quakeisometric {
+    background: url(../img/quakeisometric.png) no-repeat;
+    background-size: cover;
+}
+
+.picks .proliga {
+    background: url(../img/proliga.png) no-repeat;
+    background-size: cover;
+}
+
+.picks .quake2rtx {
+    background: url(../img/quake2rtx.png) no-repeat;
+    background-size: cover;
+}
+
+.picks .doompago {
+    background: url(../img/doompago.png) no-repeat;
+    background-size: cover;
+}
