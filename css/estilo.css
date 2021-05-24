@@ -190,7 +190,7 @@ nav ul {
 }
 
 .sidebar-right {
-height: 1860px;
+height: 1800px;
 width: 280px;
 float: right;
 position: relative;
@@ -211,7 +211,7 @@ right: 50px;
 }
 
 .picks {
-    top: 100px;
+    top: 80px;
     position: sticky;
     -webkit-position:sticky;
     height: 300px;
