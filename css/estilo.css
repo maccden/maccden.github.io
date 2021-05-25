@@ -346,7 +346,7 @@ li a {
         font-weight: bold;
         font-size: 2vh;
         position: absolute;
-        top: 75%;
+        top: 80%;
         left: 50%;
         transform: translateX(-50%) translateY(-50%);
     }
@@ -356,7 +356,7 @@ li a {
         width: 85%;
         border-top: 2px solid white;
         position: absolute;
-        top: 68%;
+        top: 70%;
         left: 50%;
         transform: translateX(-50%) translateY(-50%);
     }
