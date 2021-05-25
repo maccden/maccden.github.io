@@ -42,16 +42,17 @@ nav {
     font-family: "Montserrat", sans-serif;
 }
 
-.logo h4{
+.logo h4 {
+    font-family: "QUAKE2", sans-serif;
     text-shadow: 2px 2px 2px #000;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-family: "Montserrat", sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
     color: white;
     letter-spacing: 3px;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 40px;
 }
+
 .nav-links {
     display: flex;
     justify-content: space-around;
@@ -98,8 +99,8 @@ nav {
     .nav-links {
         position: absolute;
         right: 0px;
-        height: 92vh;
-        top: 8vh;
+        height: 90vh;
+        top: 10vh;
         background-color: black;
         display: flex;
         flex-direction: column;
@@ -161,12 +162,10 @@ nav a {
 }
 
 .main {
-    margin: 20px 50px;
+    margin: 20px;
 }
 
 .wrapper .article {
-    width: 70%;
-    margin: 30px 10px;
     padding: 20px;
     color: white;
     font-family: "Montserrat", sans-serif;
@@ -177,7 +176,6 @@ nav a {
 }
 
 .footerbanner {
-    width: 100%;
     height: 400px;
     text-align: center;
     background-image: url("../img/footerbanner.png");
@@ -235,10 +233,10 @@ footer p {
 .menu {
     position: relative;
     z-index: 100000;
+    background: rgba(0, 0, 0, 0.1);
     top: 0;
     width: 100%;
     transition: 0.2s;
-    background: red;
     font-family: "Roboto", sans-serif;
 }
 
@@ -282,10 +280,78 @@ li a {
 }
 
 .banner {
+    width: 100%;
     height: 350px;
     background: url("../img/banner.png") no-repeat;
     background-size: cover;
-    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.banner h1 {
+    width: 85%;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    font-family: "QUAKE2", sans-serif;
+    color: white;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 10vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.banner div {
+    justify-content: center;
+    width: 85%;
+    border-top: 2px solid white;
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.banner p {
+    width: 85%;
+    text-align: center;
+    margin: 0;
+    font-family: "QUAKE2", sans-serif;
+    color: white;
+    letter-spacing: 5px;
+    font-weight: bold;
+    font-size: 2vh;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+@media screen and (max-width:1139px){
+    .banner p {
+        width: 85%;
+        text-align: center;
+        margin: 0;
+        font-family: "QUAKE2", sans-serif;
+        color: white;
+        letter-spacing: 5px;
+        font-weight: bold;
+        font-size: 2vh;
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+    .banner div {
+        justify-content: center;
+        width: 85%;
+        border-top: 2px solid white;
+        position: absolute;
+        top: 68%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
 }
 
 .sidebar-right {
@@ -354,38 +420,6 @@ li a {
 
 .picks a:hover {
     color: red;
-}
-
-.topbarsocials {
-    position: relative;
-    top: 40px;
-    display: inline-block;
-    float: left;
-    width: 100%;
-    height: 1px;
-    margin: -36px 1px 1px -10px;
-    text-align: right;
-    text-decoration: none;
-}
-
-.topbarsocials .fa {
-    margin-left: -20px;
-    background: none;
-}
-
-.topbarsocials .fa:hover {
-    opacity: .5;
-}
-
-.topbar ul li {
-    display: inline-block;
-    float: left;
-    margin-top: -7px;
-    margin-bottom: 10px;
-    margin-left: 32px;
-    color: white;
-    font-family: "Roboto", sans-serif;
-    font-size: 12px;
 }
 
 .footersocials {

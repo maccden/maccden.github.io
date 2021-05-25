@@ -8,15 +8,17 @@ body {
 .article p {
     font-size: 20px;
 }
-.wrapper{
+
+.wrapper {
     overflow: hidden;
 }
+
 .article span {
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     background: red;
     padding: 0 14px;
-    padding-bottom: 7px;
+    padding-bottom: 3px;
     padding-top: 1px;
     text-transform: uppercase;
     text-shadow: 1px, 1px, 1px
@@ -29,12 +31,126 @@ body {
     border-bottom-width: 3px;
 }
 
-.parallax {
+.banner {
     width: 100%;
     background: url(../img/quake3banner.png) no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 100;
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: black;
+    font-family: "Montserrat", sans-serif;
+}
+
+.logo h4 {
+    text-shadow: 2px 2px 2px #000;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width:1024px) {
+    .nav-links {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .burger {
+        display: block;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
 }
 
 nav a {
@@ -54,7 +170,7 @@ nav a {
 
 .main {
     padding-top: 30px;
-    margin: 0px 50px;
+    margin: 10px 10px;
 }
 
 .wrapper .article a {
@@ -105,9 +221,10 @@ footer a:hover {
 }
 
 .footerbanner p {
+    margin-left: 10px;
+    margin-right: 10px;
     position: relative;
     top: 180px;
-    margin: 1px 230px 10px 230px;
     text-decoration: none;
     color: #666;
     font-family: "Roboto", sans-serif;
@@ -123,7 +240,7 @@ footer {
     font-size: 13px;
 }
 
-.nav {
+.nav-links {
     transition: all ease .5s;
     margin-top: 0;
     margin-bottom: 0;
@@ -139,13 +256,29 @@ footer {
     font-family: "Roboto", sans-serif;
 }
 
+.banner h1 {
+    text-transform: uppercase;
+    border-bottom: 2px solid white;
+    text-align: center;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 34px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
 .menu {
     position: relative;
     top: 0;
     z-index: 100000;
     width: 100%;
     transition: 0.2s;
-    background: red;
+    background: rgba(0, 0, 0, .1);
     font-family: "Roboto", sans-serif;
 }
 
@@ -159,7 +292,7 @@ nav li a:hover {
     background: black;
 }
 
-.nav>li {
+.nav-links>li {
     float: left;
 }
 
@@ -171,7 +304,7 @@ nav ul {
     overflow: hidden;
 }
 
-.nav li ul {
+.nav-links li ul {
     position: absolute;
     display: none;
     min-width: 140px;
@@ -179,25 +312,25 @@ nav ul {
     background: black;
 }
 
-.nav li:hover>ul {
+.nav-links li:hover>ul {
     display: block;
 }
 
-.nav>li:hover {
+.nav-links>li:hover {
     color: red;
     background-color: black;
 }
 
-.nav>li:hover a {
+.nav-links>li:hover a {
     color: red;
     background: black;
 }
 
-.nav li:hover ul a {
+.nav-links li:hover ul a {
     color: white;
 }
 
-.nav li:hover ul li a:hover {
+.nav-links li:hover ul li a:hover {
     color: red;
 }
 
@@ -245,35 +378,4 @@ nav ul {
 
 .fa-twitch {
     color: white;
-}
-
-form.buscar input[type=text] {
-    padding: 14px 14px 14px;
-    font-size: 15px;
-    border: 1px black;
-    float: right;
-    width: 212px;
-    background: #c22e2e;
-}
-
-form.buscar button {
-    border: 1px solid black;
-    float: right;
-    padding: 7px 14px;
-    background: black;
-    color: white;
-    font-size: 15px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-form.buscar button:hover {
-    opacity: .7;
-    transition: 0.3s;
-}
-
-form.buscar::after {
-    content: "";
-    clear: both;
-    display: table;
 }
