@@ -208,6 +208,7 @@ nav ul {
 }
 
 .picks {
+    z-index: 1000;
     top: 100px;
     position: sticky;
     -webkit-position: sticky;
