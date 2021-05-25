@@ -9,13 +9,21 @@ $(document).ready(function() {
                 .addClass('menu');
         }
     })
-    let parallax =
-        document.querySelector('.parallax');
-
-    function ScrollParallax() {
-        let scrollTop =
-            document.documentElement.scrollTop;
-        parallax.style.transform = 'translateY(' + scrollTop * -0.3 + 'px)';
+    const navSlide = () => {
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.nav-links');
+        const navLinks = document.querySelectorAll('.nav-links li');
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('nav-active');
+            navLinks.forEach((link, index) => {
+                if (link.style.animation) {
+                    link.style.animation = ''
+                } else {
+                    link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
+                }
+            });
+            burger.classList.toggle('toggle');
+        });
     }
-    window.addEventListener('scroll', scrollParallax);
+    navSlide();
 });
