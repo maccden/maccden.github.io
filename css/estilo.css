@@ -5,6 +5,12 @@ body {
     background: #131313;
 }
 
+@font-face {
+    font-family: 'QUAKE2';
+    src: url(../fonts/FontsFree-Net-quake2.ttf);
+    font-style: normal;
+}
+
 .article p {
     font-size: 20px;
 }
@@ -99,8 +105,8 @@ nav {
     .nav-links {
         position: absolute;
         right: 0px;
-        height: 90vh;
-        top: 10vh;
+        height: 92vh;
+        top: 8vh;
         background-color: black;
         display: flex;
         flex-direction: column;
@@ -328,7 +334,8 @@ li a {
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
 }
-@media screen and (max-width:1139px){
+
+@media screen and (max-width:1139px) {
     .banner p {
         width: 85%;
         text-align: center;
@@ -343,6 +350,7 @@ li a {
         left: 50%;
         transform: translateX(-50%) translateY(-50%);
     }
+
     .banner div {
         justify-content: center;
         width: 85%;

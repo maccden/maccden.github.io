@@ -5,6 +5,12 @@ body {
     background: #131313;
 }
 
+@font-face {
+    font-family: 'QUAKE2';
+    src: url(../fonts/FontsFree-Net-quake2.ttf);
+    font-style: normal;
+}
+
 .article p {
     font-size: 20px;
 }
@@ -49,14 +55,14 @@ nav {
 }
 
 .logo h4 {
+    font-family: "QUAKE2", sans-serif;
     text-shadow: 2px 2px 2px #000;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-family: "Montserrat", sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
     color: white;
     letter-spacing: 3px;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .nav-links {
@@ -258,14 +264,13 @@ footer {
 
 .banner h1 {
     text-transform: uppercase;
-    border-bottom: 2px solid white;
     text-align: center;
     margin: 0;
-    font-family: "Montserrat", sans-serif;
+    font-family: "QUAKE2", sans-serif;
     color: white;
     letter-spacing: 3px;
     font-weight: bold;
-    font-size: 34px;
+    font-size: 4em;
     position: absolute;
     top: 50%;
     left: 50%;
