@@ -227,7 +227,7 @@ footer a:hover {
     margin-left: 10px;
     margin-right: 10px;
     position: relative;
-    top: 80px;
+    top: 70px;
     text-decoration: none;
     color: #666;
     font-family: "Roboto", sans-serif;
@@ -338,7 +338,7 @@ nav ul {
 
 .footersocials {
     position: relative;
-    top: 110px;
+    top: 80px;
 }
 
 .fa {
