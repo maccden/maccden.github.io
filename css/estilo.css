@@ -109,12 +109,12 @@ nav {
         height: 76vh;
         top: 12.5vh;
         background-color: black;
-        display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
+        display: none;
     }
 
     .nav-links li {
@@ -128,6 +128,7 @@ nav {
 
 .nav-active {
     transform: translateX(0%);
+    display: flex;
 }
 
 @keyframes navLinkFade {
@@ -187,7 +188,7 @@ nav a {
     text-align: center;
     background-image: url("../img/footerbanner.png");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size:cover;
 }
 .footbanner h1{
     text-align: center;
@@ -223,10 +224,10 @@ nav a {
 }
 
 footer p {
-    bottom: 0;
-    width: 100%;
-    text-align: center;
+    margin: 10px 10px;
+    background: #131313;
     color: rgba(203, 203, 203, .5);
+    text-align: center;
     font-family: "Roboto", sans-serif;
     font-size: 13px;
 }
@@ -361,6 +362,12 @@ li a {
         left: 50%;
         transform: translateX(-50%) translateY(-50%);
     }
+    .article p{
+        font-size: 14px;
+    }
+    .article span{
+        font-size: 18px;
+    }
 
     .banner div {
         justify-content: center;
@@ -484,39 +491,6 @@ li a {
 
 .fa-twitch {
     color: white;
-}
-
-form.buscar input[type=text] {
-    transition: 0.3s;
-    padding: 14px 14px 15px;
-    font-size: 15px;
-    border: 1px black;
-    float: right;
-    background: #c22e2e;
-    width: auto;
-}
-
-form.buscar button {
-    border: 1px solid black;
-    float: right;
-    padding: 5px 14px;
-    margin-right: 0px;
-    background: black;
-    color: white;
-    font-size: 15px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-form.buscar button:hover {
-    opacity: .7;
-    transition: 0.3s;
-}
-
-form.buscar::after {
-    content: "";
-    clear: both;
-    display: table;
 }
 
 .picks .steamdoom {
