@@ -22,7 +22,7 @@ body {
 .article span {
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
-    background: red;
+    background: #c22e2e;
     padding: 0 14px;
     padding-bottom: 3px;
     padding-top: 1px;
@@ -181,7 +181,7 @@ nav a {
 .wrapper .article a {
     transition: 0.2s;
     text-decoration: none;
-    color: red;
+    color: #c22e2e;
 }
 
 .wrapper .article {
@@ -205,8 +205,6 @@ footer a:hover {
 }
 
 .footerbanner {
-    position: relative;
-    width: 100%;
     height: 400px;
     text-align: center;
     background-image: url("../img/footerbanner.png");
@@ -229,7 +227,7 @@ footer a:hover {
     margin-left: 10px;
     margin-right: 10px;
     position: relative;
-    top: 180px;
+    top: 80px;
     text-decoration: none;
     color: #666;
     font-family: "Roboto", sans-serif;
@@ -257,7 +255,7 @@ footer {
     top: 0;
     width: 100%;
     transition: 0.2s;
-    background: red;
+    background: #c22e2e;
     font-family: "Roboto", sans-serif;
 }
 
@@ -292,7 +290,7 @@ li a {
 }
 
 nav li a:hover {
-    color: red;
+    color: #c22e2e;
     background: black;
 }
 
@@ -321,12 +319,12 @@ nav ul {
 }
 
 .nav-links>li:hover {
-    color: red;
+    color: #c22e2e;
     background-color: black;
 }
 
 .nav-links>li:hover a {
-    color: red;
+    color: #c22e2e;
     background: black;
 }
 
@@ -335,12 +333,12 @@ nav ul {
 }
 
 .nav-links li:hover ul li a:hover {
-    color: red;
+    color: #c22e2e;
 }
 
 .footersocials {
     position: relative;
-    top: 210px;
+    top: 110px;
 }
 
 .fa {
@@ -382,4 +380,15 @@ nav ul {
 
 .fa-twitch {
     color: white;
+}
+.footbanner h1{
+    text-align: center;
+    margin: 0;
+    font-family: "QUAKE2", sans-serif;
+    color: #c22e2e;
+    letter-spacing: 5px;
+    font-weight: bold;
+    font-size: 5em;
+    position: relative;
+    top: 50px;
 }

@@ -20,7 +20,7 @@ body {
     padding-top: 11px;
     padding-bottom: 4px;
     text-transform: uppercase;
-    background: red;
+    background: #c22e2e;
     text-shadow: 2px 2px 2px #000;
     text-shadow: 1px, 1px, 1px;
     font-family: 'Montserrat', sans-serif;
@@ -104,8 +104,8 @@ nav {
     .nav-links {
         position: absolute;
         right: 0px;
-        height: 88vh;
-        top: 11vh;
+        height: 78vh;
+        top: 12vh;
         background-color: black;
         display: flex;
         flex-direction: column;
@@ -187,7 +187,17 @@ nav a {
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
-
+.footbanner h1{
+    text-align: center;
+    margin: 0;
+    font-family: "QUAKE2", sans-serif;
+    color: #c22e2e;
+    letter-spacing: 5px;
+    font-weight: bold;
+    font-size: 5em;
+    position: relative;
+    top: 50px;
+}
 .footerbanner p a {
     transition: 0.3s;
     text-decoration: none;
@@ -201,7 +211,7 @@ nav a {
 
 .footerbanner p {
     position: relative;
-    top: 180px;
+    top: 80px;
     text-decoration: none;
     margin-left: 10px;
     margin-right: 10px;
@@ -231,7 +241,7 @@ footer p {
     top: 0;
     width: 100%;
     transition: 0.2s;
-    background: red;
+    background: #c22e2e;
     font-family: "Roboto", sans-serif;
 }
 
@@ -267,12 +277,12 @@ li a {
 }
 
 .nav-links>li:hover {
-    color: red;
+    color: #c22e2e;
     background-color: black;
 }
 
 .nav-links>li:hover a {
-    color: red;
+    color: #c22e2e;
     background: black;
 }
 
@@ -281,7 +291,7 @@ li a {
 }
 
 .nav-links li:hover ul li a:hover {
-    color: red;
+    color: #c22e2e;
 }
 
 .banner {
@@ -397,7 +407,7 @@ li a {
     padding: 11px;
     text-transform: uppercase;
     color: black;
-    background: red;
+    background: #c22e2e;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
 }
@@ -426,12 +436,12 @@ li a {
 }
 
 .picks a:hover {
-    color: red;
+    color: #c22e2e;
 }
 
 .footersocials {
     position: relative;
-    top: 210px;
+    top: 110px;
 }
 
 .fa {
