@@ -115,7 +115,7 @@ nav {
         height: 92vh;
         top: 8vh;
         background-color: black;
-        display: flex;
+        display: none;
         flex-direction: column;
         align-items: center;
         width: 100%;
@@ -138,6 +138,7 @@ nav {
 
 .nav-active {
     transform: translateX(0%);
+    display: flex;
 }
 
 @keyframes navLinkFade {
