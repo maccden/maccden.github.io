@@ -8,6 +8,8 @@ body {
 @font-face {
     font-family: 'QUAKE2';
     src: url(../fonts/FontsFree-Net-quake2.ttf);
+    src: url(../fonts/fontsfree-net-quake2-webfont.woff);
+    src: url(../fonts/fontsfree-net-quake2-webfont.woff2);
     font-style: normal;
 }
 
@@ -105,7 +107,7 @@ nav {
         position: absolute;
         right: 0px;
         height: 76vh;
-        top: 13vh;
+        top: 12.5vh;
         background-color: black;
         display: flex;
         flex-direction: column;
