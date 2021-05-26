@@ -188,9 +188,10 @@ nav a {
     text-align: center;
     background-image: url("../img/footerbanner.png");
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
 }
-.footbanner h1{
+
+.footbanner h1 {
     text-align: center;
     margin: 0;
     font-family: "QUAKE2", sans-serif;
@@ -201,6 +202,7 @@ nav a {
     position: relative;
     top: 50px;
 }
+
 .footerbanner p a {
     transition: 0.3s;
     text-decoration: none;
@@ -280,21 +282,19 @@ li a {
 }
 
 .nav-links>li:hover {
-    color: #c22e2e;
-    background-color: black;
+    color: rgb(149, 149, 149);
 }
 
 .nav-links>li:hover a {
-    color: #c22e2e;
-    background: black;
+    color: rgb(149, 149, 149);
 }
 
 .nav-links li:hover ul a {
-    color: white;
+    color: rgb(149, 149, 149);
 }
 
 .nav-links li:hover ul li a:hover {
-    color: #c22e2e;
+    color: rgb(149, 149, 149);
 }
 
 .banner {
@@ -362,10 +362,12 @@ li a {
         left: 50%;
         transform: translateX(-50%) translateY(-50%);
     }
-    .article p{
+
+    .article p {
         font-size: 17px;
     }
-    .article span{
+
+    .article span {
         font-size: 2em;
     }
 
@@ -470,7 +472,7 @@ li a {
 .footersocials .fa:hover {
     position: relative;
     -webkit-transform: scale(1.8);
-    color: rgba(255, 0, 0, .7);
+    color: #c22e2e;
 }
 
 .fa-facebook {

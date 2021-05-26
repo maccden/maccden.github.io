@@ -298,8 +298,7 @@ li a {
 }
 
 nav li a:hover {
-    color: #c22e2e;
-    background: black;
+    color: rgb(149, 149, 149);
 }
 
 .nav-links>li {
@@ -319,29 +318,22 @@ nav ul {
     display: none;
     min-width: 140px;
     color: white;
-    background: black;
-}
-
-.nav-links li:hover>ul {
-    display: block;
 }
 
 .nav-links>li:hover {
-    color: #c22e2e;
-    background-color: black;
+    color: rgb(149, 149, 149);
 }
 
 .nav-links>li:hover a {
-    color: #c22e2e;
-    background: black;
+    color: rgb(149, 149, 149);
 }
 
 .nav-links li:hover ul a {
-    color: white;
+    color: rgb(149, 149, 149);
 }
 
 .nav-links li:hover ul li a:hover {
-    color: #c22e2e;
+    color: rgb(149, 149, 149);
 }
 
 .footersocials {
@@ -367,7 +359,7 @@ nav ul {
 .footersocials .fa:hover {
     -webkit-transform: scale(1.8);
     position: relative;
-    color: rgba(255, 0, 0, .7);
+    color: #c22e2e;
 }
 
 .fa-facebook {
