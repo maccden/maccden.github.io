@@ -57,9 +57,9 @@ nav {
 }
 
 .logo h4 {
-    font-family: "QUAKE2", sans-serif;
     margin-top: 10px;
     margin-bottom: 10px;
+    font-family: "QUAKE2", sans-serif;
     color: white;
     letter-spacing: 3px;
     font-weight: bold;
@@ -108,24 +108,23 @@ nav {
     body {
         overflow-x: hidden;
     }
-    .article p{
-        font-size: 14px;
-    }
-    .article span{
-        font-size: 18px;
-    }
+
     .nav-links {
         position: absolute;
-        display: none;
         right: 0px;
-        height: 89vh;
-        top: 11vh;
+        height: 92vh;
+        top: 8vh;
         background-color: black;
+        display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
+    }
+
+    .article p {
+        font-size: 17px;
     }
 
     .nav-links li {
@@ -139,7 +138,6 @@ nav {
 
 .nav-active {
     transform: translateX(0%);
-    display: flex;
 }
 
 @keyframes navLinkFade {
@@ -213,6 +211,8 @@ footer a:hover {
 }
 
 .footerbanner {
+    position: relative;
+    width: 100%;
     height: 400px;
     text-align: center;
     background-image: url("../img/footerbanner.png");
@@ -232,18 +232,18 @@ footer a:hover {
 }
 
 .footerbanner p {
-    margin-left: 10px;
-    margin-right: 10px;
     position: relative;
     top: 70px;
     text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
     color: #666;
     font-family: "Roboto", sans-serif;
     font-size: 15px;
 }
 
-footer p{
-    margin: 10px 10px;
+footer p {
+    margin: 13px 10px;
     background: #131313;
     color: rgba(203, 203, 203, .5);
     text-align: center;
@@ -275,7 +275,7 @@ footer p{
     color: white;
     letter-spacing: 3px;
     font-weight: bold;
-    font-size: 4em;
+    font-size: 3em;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -389,7 +389,8 @@ nav ul {
 .fa-twitch {
     color: white;
 }
-.footbanner h1{
+
+.footbanner h1 {
     text-align: center;
     margin: 0;
     font-family: "QUAKE2", sans-serif;

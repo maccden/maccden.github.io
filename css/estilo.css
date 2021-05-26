@@ -363,10 +363,10 @@ li a {
         transform: translateX(-50%) translateY(-50%);
     }
     .article p{
-        font-size: 14px;
+        font-size: 17px;
     }
     .article span{
-        font-size: 18px;
+        font-size: 2em;
     }
 
     .banner div {
