@@ -13,8 +13,38 @@ body {
     font-style: normal;
 }
 
+.article h3 {
+    font-size: 30px;
+    color: rgb(134, 134, 134);
+}
+
 .article p {
     font-size: 20px;
+    padding-left: 30px;
+}
+
+#aling4 {
+    float: left;
+    margin: 0px 20px 30px 5px;
+    border: 1px solid rgb(134, 134, 134);
+}
+
+#aling3 {
+    float: right;
+    margin: 0px 10px 30px 30px;
+    border: 1px solid rgb(134, 134, 134);
+}
+
+#aling2 {
+    float: right;
+    margin: 0px 10px 30px 30px;
+    border: 1px solid rgb(134, 134, 134);
+}
+
+#aling {
+    float: left;
+    margin: 0px 20px 30px 5px;
+    border: 1px solid rgb(134, 134, 134);
 }
 
 .wrapper {
@@ -22,8 +52,9 @@ body {
 }
 
 .article span {
+    text-shadow: 2px 2px 2px #000;
     font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
+    font-size: 45px;
     background: #c22e2e;
     padding: 0 14px;
     padding-bottom: 3px;
@@ -37,13 +68,14 @@ body {
     border-bottom-color: rgb(236, 236, 236);
     border-bottom-style: solid;
     border-bottom-width: 3px;
+    width: 888px;
 }
 
 .banner {
-    width: 100%;
-    background: url(../img/quake3banner.png) no-repeat;
+    background: url(../img/aboutpic.png) no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background-position: bottom left;
     height: 100vh;
 }
 
@@ -105,10 +137,6 @@ nav {
 }
 
 @media screen and (max-width:768px) {
-    body {
-        overflow-x: hidden;
-    }
-
     .nav-links {
         position: absolute;
         right: 0px;
@@ -133,6 +161,39 @@ nav {
 
     .burger {
         display: block;
+    }
+
+    .article h3 {
+        font-size: 20px;
+    }
+
+    .article span {
+        text-shadow: 2px 2px 2px #000;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 35px;
+        background: #c22e2e;
+        padding: 0 14px;
+        padding-bottom: 3px;
+        padding-top: 1px;
+        text-transform: uppercase;
+        text-shadow: 1px, 1px, 1px
+    }
+
+    .article h2 {
+        border-bottom: 1px solid #ececec;
+        border-bottom-color: rgb(236, 236, 236);
+        border-bottom-style: solid;
+        border-bottom-width: 3px;
+        width: 100%;
+    }
+
+    .article p {
+        padding-left: 0px;
+    }
+
+    #aling4 {
+        width: 305px;
+        height: 304px;
     }
 }
 
@@ -182,7 +243,7 @@ nav a {
 
 .main {
     padding-top: 30px;
-    margin: 10px 10px;
+    margin: 10px 20px;
 }
 
 .wrapper .article a {
